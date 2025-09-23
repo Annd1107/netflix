@@ -27,8 +27,8 @@ export default async function Home() {
         <div className="relative w-full h-[1000px] bg-cover bg-center mt-16"
                                 style={{ backgroundImage: `url(${IMAGE_BASE_URL}${featuredMovies.backdrop_path})` }}>
                             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent p-8 flex flex-col justify-end">
-                              <h1 className="text-7xl font-bold mb-4">{featuredMovies.title}</h1>
-                              <p className="text-3xl max-w-4xl">{featuredMovies.overview}</p>
+                              <h1 className="text-5xl font-bold mb-4">{featuredMovies.title}</h1>
+                              <p className="text-2xl max-w-4xl">{featuredMovies.overview}</p>
                               <div className="mt-4">
                                 <Link href={`/movie/${featuredMovies.id}`}>
                                 <button className="bg-red-600 min-w-50 text-white px-6 py-2 rounded-lg text-4xl hover:bg-red-800">Play</button>
